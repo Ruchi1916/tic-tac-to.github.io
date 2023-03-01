@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(57, 56, 56);
+    height: 70px;
+    font-size: 39px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Rubik Vinyl', cursive;
+    background-color: lightgrey;
+    position: sticky;
+    font-weight :800;
+
+}
+
+li{
+    color: orangered;
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: white;
+}
+
+li span{
+    color: blue;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.mainContainer{
+     display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.gamecontainer{
+display: grid;
+grid-template-rows: repeat(3,10vw);
+grid-template-columns: repeat(3,10vw);
+font-family: 'Rubik Vinyl', cursive;
+ }
+
+.box{
+    border: 4px solid grey;
+    font-size: 7vw;
+    color: blue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.gameInformation{
+    padding: 0 70px;
+    font-family: 'Rubik Vinyl', cursive;
+
+}
+
+.heading1{
+    color: blue;
+    -webkit-text-stroke-width: 0.2vw;
+    font-size: 2.5rem;  
+}
+
+.heading2{
+    color: orangered;
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: orange;
+    margin-left: 48px;
+   
+}
+
+
+.imggif img{
+    width: 0;
+    transition: width 1s ease-in-out ;
+}
+
+.borderR{
+    border-right: 0;
+}
+
+.borderL{
+    border-left: 0;
+}
+
+.borderT{
+    border-top: 0;
+}
+
+.borderB{
+    border-bottom: 0;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 0 25px;
+    padding: 6px;
+    background: rgb(199, 194, 194) ;
+    border-radius: 6px;
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgb(0, 47, 255);
+    border-color: blue;
+}
+
+@media screen and (max-width: 950px )
+{
+    .mainContainer{
+        width : 90%;
+        flex-wrap: wrap;
+    }
+    .gameInformation{
+        margin-top: 40px;
+    }
+    .gamecontainer{
+        display: grid;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .heading1{
+        font-size: 3rem;
+    }
+    .heading2{
+        font-size: 2.5rem;
+    }
+    .info{
+        font-size: 1.7rem;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+}
